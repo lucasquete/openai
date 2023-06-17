@@ -15,7 +15,7 @@ const Header = ({ setListImages, setIsLoading }) => {
         try {
             setIsLoading(true);
 
-            const res = await fetch("http://localhost:8800/openai/images", {
+            const res = await fetch("https://openai-api-swart.vercel.app/openai/images", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
